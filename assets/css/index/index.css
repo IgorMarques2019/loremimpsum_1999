@@ -1,0 +1,24 @@
+@import url('../global.css');
+
+
+.container-principal {
+  background-color:rgba(255, 255, 255, 0.95);
+}
+#principal {
+  height: 100vh;
+}
+
+body {
+  background:#fff url('../../img/1062.jpg') no-repeat top left;
+  background-size:cover;
+}
+
+#principal h1 {
+  font-family: 'Poppins';
+  font-weight: 600;
+}
+
+#principal span {
+  font-size: 12px;
+  font-weight: 500;
+}

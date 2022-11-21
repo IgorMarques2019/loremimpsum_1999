@@ -1,0 +1,74 @@
+@import url('../global.css');
+
+.container .row {
+  margin-top:25px;
+}
+
+
+label {
+  padding: 5px 0px !important;
+  display:flex;
+  align-items:center;
+  
+  gap:5px;
+  font-family:'Poppins';
+}
+
+.container-label {
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:0 !important;
+}
+
+label::before {
+  content: '';
+  display:block;
+  height:5px;
+  width:15px;
+  background-color:var(--bs-success);
+}
+label > span {
+  justify-self: flex-end !important;
+}
+
+.info-results {
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.153);
+  padding:20px;
+  border-radius:5px;
+  margin-top:10px;
+}
+
+.results {
+  padding:10px !important;
+  border:1px solid rgb(239, 239, 239);
+  display:flex ;
+  flex-flow:row wrap;
+  align-items:center;
+  justify-content:space-between;
+}
+
+
+.results + .results  {
+  margin-top:10px;
+}
+.results span {
+  padding:0px !important;
+  color:#353535;
+  font-weight:500;  
+}
+
+.results p {
+  margin:0;
+  color:green;
+  font-weight:500;
+}
+
+input {
+  padding:10px;
+  border:1px solid #c5c5c5;
+  border-radius:4px;
+}
+input:focus {
+  outline:1px solid green;
+}

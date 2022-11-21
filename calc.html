@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./assets/css/calc/calc.css">
+  <link rel="shortcut icon" href="./assets/img/money-removebg-preview.png" type="image/x-icon">
+  <title>Calculadora</title>
+</head>
+
+<body>
+  <div class="container p-5">
+    <h1 class="text-center">Calcular</h1>
+    <div class="row">
+      <div class="container-label"><label class="fs-5">Valor do Produto </label><span class="badge bg-success">R$</span></div>
+      <input id="precoProd" class="" type="number" min="0" placeholder="Quanto você pagou pelo produto (UN)">
+    </div>
+
+    <div class="row">
+      <div class="container-label"><label class="fs-5">Faturamento</label><span class="badge bg-success">R$</span></label></div>
+      <input id="faturamento" class="" type="number" min="0" placeholder="Faturamento como base">
+    </div>
+
+    <div class="row">
+      <div class="container-label"><label class="fs-5">Lucro desejado</label><span class="badge bg-success">%</span></div>
+      <input id="lucroDesejado" class="" type="number" min="0" placeholder="Quanto de lucro deseja obter...">
+    </div>
+
+    <div class="row">
+      <div class="container-label"> <label class="fs-5">Despesas fixas (Soma total)</label><span class="badge bg-success">R$</span></div>
+      <input id="despFixas" type="number" min="0" placeholder="Ex: aluguel + Luz + Água">
+    </div>
+
+    <div class="row">
+      <div class="container-label"> <label class="fs-5">Despesas Váriaveis</label><span class="badge bg-success">%</span></div>
+      <input id="despVar" class="" type="number" min="0" placeholder="Ex: taxa de máquininha, impostos etc...">
+    </div>
+
+    <div class="row">
+      <button id="calcular" class="btn btn-success">Calcular</button>
+    </div>
+    <!-- ------------------------------ Resultados ------------------------------ -->
+    <div class="info-results">
+      <div class="results">
+        <span>Vender Por:</span>
+        <p id="pv"></p>
+      </div>
+      <div class="results">
+        <span>Lucro:</span>
+        <p id="lc"></p>
+      </div>
+
+      <div class="results">
+        <span>Markup:</span>
+        <p id="mkp"></p>
+      </div>
+
+      <div class="results">
+        <span>Margem de Contribuição</span>
+        <p id="mc"></p>
+      </div>
+      <div class="results">
+        <span>Ponto de equilibrio:</span>
+        <p id="pe"></p>
+      </div>
+      <div class="results">
+        <p id="nv"></p>
+      </div>
+
+
+
+      <p d-block w-100 class="alerta-error m-3 alert alert-danger text-danger">A % total (despesas fixas + váriaveis + lucros excedeu 100%, revise o faturamento ou então as % correspondentes</p>
+    </div>
+
+
+
+
+
+  </div>
+  <footer class=" w-100">
+
+    <p class="p-3 text-center">Site made By <span class="text-success">Igor Marques</span> &copy; <span id="yearCopy"></span></p>
+  </footer>
+
+  <script src="./assets/js/bootstrap.bundle.min.js"></script>
+  <script src="./assets/js/jquery-3.6.1.js"></script>
+  <script src="./assets/js/calc.js"></script>
+</body>
+
+</html>
